@@ -107,7 +107,7 @@ namespace Supes
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.Aqua);
-            OpenChildForm(new Products());
+            OpenChildForm(new SellingForm());
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
@@ -157,6 +157,14 @@ namespace Supes
         private void iconButton8_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Aqua);
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
         }
     }
 }

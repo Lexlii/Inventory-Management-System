@@ -44,16 +44,21 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.Controls.Add(this.iconButton9);
             this.panel1.Controls.Add(this.iconButton5);
             this.panel1.Controls.Add(this.iconButton4);
             this.panel1.Controls.Add(this.iconButton3);
@@ -83,7 +88,7 @@
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton5.Size = new System.Drawing.Size(189, 50);
             this.iconButton5.TabIndex = 5;
-            this.iconButton5.Text = "Settings";
+            this.iconButton5.Text = "Password Reset";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
@@ -106,7 +111,7 @@
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton4.Size = new System.Drawing.Size(189, 50);
             this.iconButton4.TabIndex = 4;
-            this.iconButton4.Text = "Password Reset";
+            this.iconButton4.Text = "Sales";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = true;
@@ -301,11 +306,48 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightPink;
+            this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(189, 139);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(821, 474);
             this.panel4.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Supes.Properties.Resources.shopp;
+            this.pictureBox2.Location = new System.Drawing.Point(243, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(377, 315);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.iconButton9.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 32;
+            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton9.Location = new System.Drawing.Point(0, 380);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton9.Size = new System.Drawing.Size(189, 50);
+            this.iconButton9.TabIndex = 6;
+            this.iconButton9.Text = "Log-Out";
+            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
             // 
             // AdminPage
             // 
@@ -325,6 +367,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -347,5 +391,7 @@
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton9;
     }
 }
