@@ -104,16 +104,11 @@ namespace Supes
             OpenChildForm(new Sellers());
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, Color.Aqua);
-            OpenChildForm(new SellingForm());
-        }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.Aqua);
-            OpenChildForm(new Products());
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
